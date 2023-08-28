@@ -1,0 +1,754 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+.navbar-nav .nav-link {
+  color: #000000; /* Initial color */
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.75px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  transition: color 0.3s; /* Adding transition for smooth color change */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f2a100; /* Hover color */
+}
+.bckgr {
+  position: relative; /* Make sure the container is positioned */
+  width: 100%;
+  height: 900px;
+  margin-top: -20%;
+  z-index: -1;
+}
+.navbar {
+  transition: background-color 0.3s; /* Add smooth transition animation */
+}
+.navbar.bg-transparent {
+  background-color: transparent !important;
+  
+}
+.navbar.bg-white {
+  background-color: white !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+/* Navbar links */
+.navbar-custom .navbar-nav .nav-link {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.75px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #f2a100;
+}
+
+/* Background container */
+.bckgr {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  margin-top: -20%;
+  z-index: -1;
+}
+
+/* Navbar transitions */
+.navbar-custom {
+  transition: background-color 0.3s;
+}
+
+.navbar-custom.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* Remove box shadow from custom navbar */
+.navbar-custom.bg-white {
+  background-color: white !important;
+  box-shadow: none; /* Remove box shadow */
+}
+
+
+.container {
+  position: relative; /* Make sure the container is positioned */
+}
+.c1 {
+  margin-top: -28%;
+}
+.custom-slide-text {
+  color: #313131;
+  color: RGB(49, 49, 49);
+  background-color: #000000;
+  background-color: RGBA(0, 0, 0, 0);
+  font-family: "rubik";
+  font-size: 60px;
+  line-height: 1;
+  vertical-align: baseline;
+  letter-spacing: normal;
+
+  font-weight: 700;
+}
+.custom-slide-text {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .image {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .carousel-inner .carousel-item.active .custom-slide-text,
+  .carousel-inner .carousel-item.active .image {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+.overlay-text{
+  margin-top: -60%;
+  margin-right: 40%;
+  padding: 0% 0% 0% 4%;
+}
+
+
+.overlay-text p {
+  font-family: "rubik";
+  font-size: 25px;
+  line-height: 37.8px;
+  font-weight: 400;
+  text-decoration: none solid rgb(242, 161, 0);
+  transition: color 0.3s; /* Adding transition for smooth color change */
+  
+}
+
+.overlay-text p:hover {
+  color: #F2A100; }
+
+
+
+  
+ 
+  
+
+
+
+  .image-container {
+    max-height: 100px; /* Set the maximum height for the images */
+    overflow: hidden; /* Hide any excess content */
+}
+
+.image-container img {
+    width: 100%; /* Make sure the image width scales to fit */
+    height: auto; /* Allow the image height to adjust proportionally */
+}
+
+.image-container + .image-container {
+    margin-top: 10px; /* Add a margin between image containers */
+}
+
+
+
+/* Add a background color to the navbar items on hover */
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: none; /* Change this color as needed */
+}
+
+/* Show the dropdown menu when hovering over a navbar item */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.text-color {
+  color: #4C4C4C; /* Color in Hex */
+  font-family: "Rubik", sans-serif; /* Font Family */
+  font-size: 16px; /* Font Size */
+  line-height: 12px; /* Line Height */
+  margin: 0; /* Margin */
+  padding: 13px 0 0 0; /* Padding */
+  font-weight: 400; /* Font Weight */
+  text-decoration: none solid rgb(76, 76, 76); /* Text Decoration */
+  text-align: start; /* Text Align */
+  
+}
+.text-color2{
+  color: #F2A100; /* Color in Hex */
+  font-family: "Rubik", sans-serif; /* Font Family */
+  font-size: 16px; /* Font Size */
+  line-height: 12px; /* Line Height */
+  margin: 0; /* Margin */
+  padding: 13px 0 0 0; /* Padding */
+  font-weight: 400; /* Font Weight */
+  text-decoration: none solid rgb(76, 76, 76); /* Text Decoration */
+  text-align: start; /* Text Align */
+
+}
+
+
+
+/* Custom styles for hover dropup */
+.custom-dropup {
+  position: relative;
+}
+
+.icon-border {
+  border: 1px solid lightgray; /* Add light gray border */
+  padding: 5px; /* Add padding for spacing */
+  border-radius: 5px; /* Optional: Add border radius for a rounded border */
+}
+
+.dropup-menu {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%; /* Make the dropup menu the same width as the icon */
+  background-color: black; /* Set background color to black */
+  padding: 8px; /* Add padding for better appearance */
+}
+
+.icon-img {
+  width: 25px; /* Set icon width */
+  height: 25px; /* Set icon height */
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+   /* Increase the margin between icons */
+}
+.dropup-menu a {
+  display: block;
+  margin-bottom: 20px;
+   /* Adjust this value to control the spacing between icons */
+}
+body {
+  background: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 img{
+  width: 100%px;
+}
+
+
+
+
+:root {
+  --gutters: 10%;
+}
+
+body {
+  background: #333;
+  
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.text-center2 {
+  background-image: url("/Images/bg-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: -5%;
+}
+
+.overlay-text-New {
+  font-family: "Rubik", sans-serif;
+  color: #F2A100;
+  margin-left: -45%;
+}
+
+.overlay-text-New p {
+  font-family: "Rubik", sans-serif;
+  text-align:center;
+  font-size: 2vw;
+  color: #000000;
+  margin-left: -10%;
+}
+
+.custom-button {
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+/* For single line "Welcome To Store" on all devices */
+.overlay-text-New .mb-0.single-line {
+  white-space: nowrap;
+}
+.overlay-text-New p .mb-0.single-line {
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+    /* Add your custom styles here */
+    .carousel-container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      background-color: #F2A100;
+    
+      border-radius: 8px;
+    }
+
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set a nice background color and font for the whole page */
+    body {
+      font-family: "rubik", sans-serif;
+      background-color: white;
+    }
+
+    /* Center the carousel container and give it some spacing */
+    
+    /* Style the carousel images */
+    .slick-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-left: 50px;
+    }
+
+   
+
+    /* Style the previous and next buttons */
+    
+    /* Adjust the top margin for the carousel container to accommodate the buttons */
+    .carousel-container {
+      margin-top: 50px;
+    }
+
+    /* Additional styles for spacing and hiding extra slides */
+   
+
+    .slick-slide {
+  flex: 0 0 calc(40% - 20px); /* Each slide occupies 40% width minus the gap */
+  margin-right: 85px; /* Gap between slides */
+}
+
+/* Hide overflow for container */
+.slick-list {
+  overflow: hidden;
+}
+
+   
+    .variable-width {
+  display: flex;
+}
+
+.variable-width img {
+  margin-right: 1000px; /* Adjust this value to set the desired gap between images */
+  max-width: 100%;
+  height: auto;
+}
+
+.variable-width img:last-child {
+  margin-right: 0; /* Remove margin from the last image */
+}
+
+
+
+/* Add an orange border with inner padding and curved edges to each benefit section */
+.benefit-wrapper .single-benefit {
+  border: 2px solid orange;
+  border-radius: 10px; /* Adjust the value to control the curve */
+  padding: 160px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 30px 0;
+  padding: 60px 50px 55px;
+  font-weight: 400;
+  text-decoration: none solid rgb(76, 76, 76);
+  text-align: center;
+}
+
+/* Style the benefit icons */
+.single-benefit img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Style benefit titles */
+.single-benefit h3.title {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Style benefit description */
+.single-benefit p {
+  margin: 10px 0 0;
+}
+.c3{
+  background-color: #F8F8F8;
+}
+
+.navbar-custom2 .navbar-nav .nav-link {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.75px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.navbar-custom2 .navbar-nav .nav-link:hover {
+  color: #f2a100;
+}
+
+/* Background container */
+.bckgr {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  margin-top: -20%;
+  z-index: -1;
+}
+
+/* Navbar transitions */
+.navbar-custom2 {
+  transition: background-color 0.3s;
+}
+
+.navbar-custom2.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* Remove box shadow from custom navbar */
+.navbar-custom2.bg-white {
+  background-color: #F8F8F8 !important;
+  box-shadow: none; /* Remove box shadow */
+}
+
+
+
+.custom-carousel-container {
+  width: 100%;
+  margin: auto;
+  background-color: #F8F8F8;
+  
+  border-radius: 8px;
+}
+
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set a nice background color and font for the whole page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    /* Center the carousel container and give it some spacing */
+   
+    /* Style the carousel images */
+    
+
+   
+
+    /* Style the previous and next buttons */
+    
+    /* Adjust the top margin for the carousel container to accommodate the buttons */
+    
+
+
+    /* Additional styles for spacing and hiding extra slides */
+   
+
+
+/* Hide overflow for container */
+.slick-list {
+  overflow: hidden;
+}
+
+   
+    .custom-variable-width {
+  display: flex;
+}
+
+.custom-variable-width img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 50px;
+}
+
+.variable-width img:last-child {
+  margin-right: 0; /* Remove margin from the last image */
+}
+
+.footer-widget-section {
+  background-color: #F1EEE5; /* Light purple background color */
+  padding: 50px 0;
+}
+
+/* Heading styles */
+.footer-widget-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  letter-spacing: normal;
+  word-spacing: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px; /* Add a small space below the heading */
+}
+
+/* Content styles for sections without headings */
+.footer-widget-section .footer-widget {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 24.375px;
+  letter-spacing: normal;
+  word-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link a {
+  color: #666; /* Gray link color */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link a:hover {
+  color: #000; /* Hover color */
+}
+
+.widget-about p {
+  color: #777; /* Gray text color */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.widget-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.widget-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.widget-social a {
+  color: #777; /* Gray icon color */
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.widget-social a:hover {
+  color: #333; /* Hover color */
+}
+.footer-widget-section .footer-widget ul {
+  list-style: none; /* Remove default list-style (bullet points) */
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply font styles */
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/* Style the footer container */
+.footer-top {
+  background-color: #f5f5f5;
+  padding: 10px 0 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Style the footer elements */
+.footer-top .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the logo */
+.footer-logo img {
+  width: 100%; /* Occupy full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 154px; /* Set a max width for larger screens */
+}
+
+/* Style the contact and payment section */
+.footer-contact-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ... Other styles ... */
+
+/* Style the contact section */
+.footer-contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon img {
+  width: 39px;
+  height: 46px;
+  margin-right: 10px; /* Add margin to create space between icon and text */
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ... Other styles ... */
+
+
+/* Style the payment image */
+.footer-payment img {
+  width: 100%; /* Occupy full width of the container */
+  height: auto; /* Maintain aspect ratio */
+   /* Set a max width for larger screens */
+  
+}
+
+/* Style the subscribe section */
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input[type="text"] {
+  flex: 1; /* Occupy remaining space */
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.subscribe-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.contact-content{
+  font-family: Rajdhani, sans-serif;
+  font-size: 24px;
+  line-height: 26.4px;
+  font-weight: 600;
+  text-decoration: none solid rgb(37, 44, 81);
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -20px;
+}
+.contact-content h6{
+  font-family: Rajdhani, sans-serif;
+  font-size: 24px;
+  line-height: 26.4px;
+  font-weight: 600;
+  text-decoration: none solid rgb(37, 44, 81);
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+.footer-subscribe{
+ font-family: 'Rajdhani', sans-serif;
+font-size: 24px;
+line-height: 30px;
+vertical-align: baseline;
+letter-spacing: normal;
+word-spacing: 0px;
+margin: 0;
+padding: 0 15px 0 0;
+font-weight: 600;
+text-decoration: none solid rgb(37, 44, 81);
+text-align: start;
+text-indent: 0;
+display: flex;
+align-items: center;
+}
+
+
+.subscribe-form {
+  display: flex;
+  align-items: center; /* Vertically center align the form elements */
+}
+
+/* Style the input and button for better appearance */
+.subscribe-form input[type="text"],
+.subscribe-form button {
+  margin: 0; /* Reset margin for input and button */
+  padding: 6px; /* Add padding for spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.subscribe-form button {
+  margin-right: -140px; /* Add some space between input and button */
+  background: none;
+  border: none;
+}
